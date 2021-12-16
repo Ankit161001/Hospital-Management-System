@@ -1,8 +1,0 @@
-<h1>Doctor Details</h1>
-<a href="/">Home Page</a>
-
-{{ object_list }}
-
-{% for instance in object_list %}
-	<p>{{ instance.id }} - {{ instance.name }} - {{ instance.description }} - {{ instance.spec }}</p>
-{% endfor %}
