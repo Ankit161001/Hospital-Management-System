@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="icon" href="https://cdn1.iconfinder.com/data/icons/covid-19-74/32/hospital_clinic_covid-19-256.png">
+    <style>
+        .topbar{
+            height: 100px;
+            width: 100%;
+            margin-bottom: 10px;
+            background-color:rgb(144, 192, 235);
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .contact_box{
+          display: flex;
+          margin: auto;
+          width: 700px;
+          height: 730px;
+          border-radius: 10px;
+          background-color: white;
+        }
+        .contact_box_form{
+          margin-left: 30px;
+          margin-right: 30px;
+          width: 650px;
+          height: 650px;
+          background-color: white;
+        }
+        .arial_text{
+          font-family: arial;
+        }
+        .label_form{
+          font-family: arial;
+          font-size: 18px;
+          margin-top: 10px;
+          margin-bottom:10px;
+        }
+        .styled {
+          margin-top: 20px;
+          border: 0;
+          line-height: 2.5;
+          padding: 0 20px;
+          font-size: 1rem;
+          margin-bottom: 15px;
+          text-align: center;
+          color: #fff;
+          text-shadow: 1px 1px 1px #000;
+          border-radius: 10px;
+          background-color: rgba(17, 65, 216 , 0.02);
+          background-image: linear-gradient(to top left,
+                                            rgba(0, 0, 0, .2),
+                                            rgba(0, 0, 0, .2) 30%,
+                                            rgba(0, 0, 0, 0));
+          box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                      inset -2px -2px 3px rgba(0, 0, 0, .6);
+        }
+
+        .styled:hover {
+          background-color: rgba(0, 255, 0, 0.51);
+        }
+
+        .styled:active {
+          box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                      inset 2px 2px 3px rgba(0, 0, 0, .6);
+        }
+        .drop{
+          width: 258px;
+          font-size: 18px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+        .image{
+          background-color: #cccccc;
+          background-position: center;
+        }
+        .field_width{
+          width: 250px;
+          margin-bottom: 10px;
+        }
+        .radio_btn{
+          background-color: #cccccc;
+          font-family: arial;
+          font-size: 18px;
+        }
+        .form_table{
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+        .text_ar{
+          font-size: 15px;
+          font-family: arial;
+        }
+    </style>
+</head>
+<body class="image">
+<header>
+    <div class="topbar">
+        <h1 class="arial_text">Hospital Management System</h1>
+    </div>
+</header>
+<div class="contact_box">
+  <div class="contact_box_form">
+    <h2 class="arial_text">Contact Us</h2>
+    <hr align="center">
+    <p>
+      Apollo Hospitals is always looking to make things easier for you.
+      Our aim is to provide our customers with the best medical facilities,
+      constant care, and reliable support. If you would like to get in touch
+      with a doctor from a specific department, would like some specific
+      information about the services we provide, or just have a question for us,
+       please fill up the Form given below and we will get back to you.
+    </p>
+    <div class="radio_btn">
+      <table cellpadding="15">
+        <form action="">
+          <tr>
+            <td>
+              <h4>Type of query:</h4>
+            </td>
+            <td>
+              <input type="radio" name="" value="">Enquiry
+            </td>
+            <td>
+              <input type="radio" name="" value="">Complaint
+            </td>
+            <td>
+              <input type="radio" name="" value="">Feedback
+            </td>
+          </tr>
+        </form>
+      </table>
+    </div>
+    <form class="" action="index.html" method="post">
+      <table>
+        <tr>
+          <td class="form_table">
+            <input type="text" name="Name" class="label_form field_width" value="" placeholder="Full Name"><br>
+          </td>
+          <td class="form_table">
+            <input type="text" name="Enter your Email" class="label_form field_width" value="" placeholder="Enter your Email"><br>
+          </td>
+        </tr>
+        <tr>
+          <td class="form_table">
+            <input type="text" name="phone no" class="label_form field_width" value="" placeholder="Phone Number"><br>
+          </td>
+          <td class="form_table">
+            <select class="drop" name="">
+              <option value="1">Country</option>
+              <option value="2">Country 1</option>
+              <option value="3">Country 2</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="form_table">
+            <select class="drop" name="">
+              <option value="1">Select City</option>
+              <option value="2">City 1</option>
+              <option value="3">City 2</option>
+            </select>
+          </td>
+          <td class="form_table">
+            <select class="drop" name="">
+              <option value="1">Select Hospital</option>
+              <option value="2">Hospital 1</option>
+              <option value="3">Hospital 2</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="form_table">
+            <select class="drop" name="">
+              <option value="1">Select Speciality</option>
+              <option value="2">Speciality 1</option>
+              <option value="3">Speciality 2</option>
+            </select>
+          </td>
+          <td class="form_table">
+            <select class="drop" name="">
+              <option value="1">Select Doctor</option>
+              <option value="2">Doctor 1</option>
+              <option value="3">Doctor 2</option>
+              <option value="4">Doctor 3</option>
+              <option value="5">Doctor 4</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <center>
+        <textarea name="yourMessage" rows="8" cols="75" placeholder="Enter your Message" class="text_ar"></textarea>
+      </center>
+      <center>
+        <input type="submit" class="styled">
+      </center>
+    </form>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="icon" href="https://cdn1.iconfinder.com/data/icons/covid-19-74/32/hospital_clinic_covid-19-256.png">
+    <style>
+        .topbar{
+            height: 100px;
+            width: 100%;
+            background-color:rgb(144, 192, 235);
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .abt{
+            display: flex;
+            align-items: flex-end;
+        }
+        .container1{
+            display: flex;
+            margin: auto;
+            width: 100%;
+            height: 500px;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+        }
+        .box{
+            display: block;
+            width: 22%;
+            margin: auto;
+            justify-content: center;
+            background-color: rgb(144, 192, 235);
+            height: 350px;
+        }
+        .image{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 60%;
+            margin: auto;
+            margin-top: 2%;
+        }
+        .define{
+            display: flexbox;
+            margin: 5%;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            
+            align-items: center;
+        }
+        span{
+            display: flex ;
+            align-items: center;
+            justify-content: center;
+            font-size: 23px;
+            /* text-align: center; */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .container2{
+            display: flex;
+            width: 100%;
+            height: 150px;
+            background-color:#7FFFD4;
+            justify-content: space-evenly;
+        }
+        .options{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: auto;
+            width: 90%;
+        }
+        .anch{
+            display: block;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .end{
+            display: flex;
+            width: 100%;
+            height: 630px;
+            /* background-color: rgb(124, 124, 124); */
+            align-items: center;
+        }
+        .container3{
+            width: 65%;
+            background-color: rgb(144, 192, 235);
+            height: 95%;
+            margin: 1%;
+            display: inline;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .container4{
+            display: flex;
+            width: 35%;
+            background-color: rgb(159, 159, 228);
+            height: 95%;
+            margin: 1%;
+        }
+        .boxend{
+            display: block;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            margin-left: 5% ;
+            margin-right: 5%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .navbar{
+            background-color: #7FFFD4;
+            height: 70px;
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+        .navitems{
+            /* background-color: rgb(197, 107, 107); */
+            width: max-content;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .text{
+            font-size: 20px;
+        }
+        .styled {
+          margin-top: 25px;
+          margin-bottom: 25px;
+          border: 1px black solid;
+          line-height: 2;
+          /* padding: 0 20px; */
+          font-size: 1rem;
+          text-align: center;
+          color: #fff;
+          text-shadow: 1px 1px 1px #000;
+          border-radius: 10px;
+          background-color: rgba(33, 220, 33 , 0.51);
+          background-image: linear-gradient(to top left,
+                                            rgba(0, 0, 0, .2),
+                                            rgba(0, 0, 0, .2) 30%,
+                                            rgba(0, 0, 0, 0));
+          box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                      inset -2px -2px 3px rgba(0, 0, 0, .6);
+        }
+
+        .styled:hover {
+          background-color: rgba(0, 255, 0, 0.51);
+        }
+        .styled:active {
+          box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                      inset 2px 2px 3px rgba(0, 0, 0, .6);
+        }
+
+        h1{
+            font-size: 40px;
+            font-weight: 700;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+<header >
+    <div class="topbar">
+        <img  height="95%" src="https://img.icons8.com/external-tulpahn-outline-color-tulpahn/64/000000/external-hospital-healthcare-tulpahn-outline-color-tulpahn.png"/>
+        <h1>Hospital Management System</h1>
+        <a href="login"><button type="button" class="styled">Log In / Register</button></a>    
+    </div>
+</header>
+
+<nav class="navbar">
+    <div class="navitems"> <a class="text" href=""> HOME </a> </div>
+    <div class="navitems"> <a class="text" href="aboutus">ABOUT US</a> </div>
+    <div class="navitems"> <a class="text" href="doctors">OUR TEAM</a> </div>
+    <div class="navitems"> <a class="text" href="contactus">CONTACT US</a> </div> 
+    <div class="navitems"> <a class="text" href="">SERVICES</a> </div>
+</nav>
+
+<div class="container1">
+    <div class="box">
+        <img class="image" src="https://images.pexels.com/photos/8260576/pexels-photo-8260576.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+        <div class="define"><span>7,000+ Healing Hands</span> 
+            Largest network of the world’s finest and brightest medical experts who provide compassionate care using outstanding expertise and advanced technology.</div>
+    </div>
+    <div class="box">
+        <img class="image" src="https://www.news-medical.net/image.axd?picture=2021%2F6%2Fshutterstock_1928863685.jpg" alt="">
+        <div class="define"><span>4,000+ Pharmacies </span>
+            Apollo Pharmacy is India’s first, largest and most trusted branded pharmacy network, with over 4000 plus outlets covering the entire nation</div>
+    </div>
+    <div class="box">
+        <img class="image" src="https://visitandmedcare.com/wp-content/uploads/2018/12/Resim1.png" alt="">
+        <div class="define"> <span>Most Advanced Healthcare Technology </span> 
+            Apollo Hospitals has been the pioneer in bringing ground-breaking healthcare technologies to India.</div>
+    </div>
+    <div class="box">
+        <img class="image" src="https://www.orissapost.com/wp-content/uploads/2020/04/Clinic-1.jpg" alt="">
+        <div class="define"> <span>Best Clinical Outcomes</span> 
+            Leveraging its vast medical expertise & technological advantage, Apollo Hospitals has consistently delivered best in class clinical outcomes.</div>
+    </div>
+
+</div>
+
+<div class="container2">
+    <div class="options">
+        <a  href="appoint"><img class="anch" src="https://img.icons8.com/ios-filled/50/000000/appointment-scheduling.png"/>  Book Appointment</a>
+        <a href=""><img src="https://img.icons8.com/ios-filled/50/000000/consultation.png"/> <br> Consult Online</a>
+        <a href="bookbed"><img src="https://img.icons8.com/external-wanicon-lineal-color-wanicon/50/000000/external-health-check-health-checkup-wanicon-lineal-color-wanicon.png"/> <br> Book Bed</a>
+        <a href="appoint"><img src="https://img.icons8.com/ios-filled/50/000000/lab-items.png"/> <br> Book lab Test</a>
+        <a href=""><img src="https://img.icons8.com/ios/50/000000/health-graph.png"/> <br> View Health Record</a>
+        <a href=""><img src="https://img.icons8.com/ios-filled/50/000000/heart-health.png"/> <br> Health and Witness</a>
+    </div>
+</div>
+
+<footer class="end"> 
+    <div class="container3"> 
+        <div class="boxend">
+            <h3>Robotic Surgery</h3>
+            Robotic Surgery is a branch of medical science that uses a robotic arm controlled with a computer by a surgeon. With this method being more convenient for the surgeon due to a perfect view of the area under surgery, Apollo’s Robotic Surgery Department is equipped with a skilled team of the best Surgeons. Apollo Hospitals is your one-stop destination to book the finest Robot-assisted Surgeons in your town.
+        </div>
+        <div class="boxend">
+            <h3>Oncology</h3>
+            Cancer is a ruthless disease. It evolves constantly and spreads relentlessly. It's hard to catch and even harder to treat.
+            But that is about to change, with Precision Oncology. Apollo's unique approach to diagnosing, treating and monitoring cancer that is as precise as it can get.
+            Cancer is Conquerable. And you can conquer it too. With precision, with Apollo Hospitals. Stay a step ahead of cancer with Apollo Cancer Centres.
+        </div>
+        <div class="boxend">
+            <h3>Gastroenterology</h3>
+            Gastroenterology deals with the diagnosis and treatment of complications of the gastrointestinal tract, i.e. the stomach and small intestine. With Apollo Hospitals’ qualified bench strength of Gastroenterologists who are the best in their field, finest treatment is just around the corner. Experience a smoother medical experience for booking an appointment or finding the best gastroenterologists for world-class for your gastro-related problems at Apollo Hospitals.
+        </div>
+        <div class="boxend ">
+            <h3>Bariatric Surgery</h3>
+            Bariatric Surgery deals with weight reduction using various techniques to combat obesity. The process includes reducing the size of the stomach or removing a portion of the stomach or re-routing the small intestine. Apollo Hospitals is home to the best bariatric surgeons in the nation who are skilled in Gastrectomy and Gastroplasty among other procedures. 
+        </div>
+    </div>
+    <div class="container4">
+        <img src="https://images.pexels.com/photos/3786157/pexels-photo-3786157.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" height="100%" width="100%" alt="">
+    </div>
+</footer>
+    
+</body>
+</html>

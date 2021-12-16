@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Ambulance</title>
+    <link rel="icon" href="https://cdn1.iconfinder.com/data/icons/covid-19-74/32/hospital_clinic_covid-19-256.png">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <style>
+        .topbar{
+            height: 100px;
+            width: 100%;
+            margin-bottom: 10px;
+            background-color:rgb(144, 192, 235);
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .arial_text{
+          font-family: arial;
+        }
+        .image{
+          background-color: #cccccc;
+          background-position: center;
+        }
+        .field_width{
+          width: 250px;
+        }
+        .ambu_box{
+          margin-top: 20px;
+          margin-left: 350px;
+          margin-bottom: 0px;
+          width: 800px;
+          height: 60px;
+          border-radius: 10px;
+          background-color: aquamarine;
+        }
+        .ambu_inner_box{
+          text-align: center;
+          justify-content: center;
+          margin-top: 10px;
+          margin-left: 10px;
+          margin-right: 10px;
+          margin-bottom: 10px;
+          width: 780px;
+          height: 30px;
+          font-size: 20px;
+          font-family: arial;
+          border-radius: 10px;
+          background-color: aquamarine;
+        }
+        .indi_ambu{
+          display: flex;
+          margin-left: 350px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          width: 800px;
+          height: 230px;
+          border-radius: 10px;
+          background-color: #ffffff;
+        }
+        .indi_ambu_inner{
+          text-align: center;
+          justify-content: center;
+          margin-left: 20px;
+          margin-top: 0px;
+          margin-bottom: 20px;
+          font-size: 18px;
+          font-family: arial;
+          width: 760px;
+          height: 230px;
+          border-radius: 10px;
+          background-color: #ffffff;
+        }
+        .waimage{
+          margin-left: 20px;
+        }
+        .docimage{
+        	width: 150px;
+        	height: 150px;
+        }
+        .profilepic{
+        	width: 500px;
+        	text-align: justify;
+        }
+    </style>
+</head>
+<body class="image">
+<header>
+    <div class="topbar">
+        <h1 class="arial_text">Hospital Management System</h1>
+    </div>
+</header>
+<div class="ambu_box">
+  <div class="ambu_inner_box">
+    Our Trusted Panel of Doctors
+    <hr style="height:3px; border: 1px; color:#000; background-color:#000;">
+  </div>
+</div>
+<{% for instance in object_list %}
+<div class="indi_ambu">
+  <div class="indi_ambu_inner"> 
+    <p>{{ instance.name }} - {{ instance.spec }}</p>
+    <hr style="height:2px; border: 1px; color:#000; background-color:#000;">
+    <table cellpadding="8px">
+    	<tr>
+    		{% if instance.image != None %}
+			<td><img src="{{ instance.image.url }}" class="docimage"></td>
+			{% endif %}
+			<td class="profilepic">{{ instance.description }}</td>
+    	</tr>
+    </table>
+	
+  </div>
+</div>
+{% endfor %}
+</body>
+</html>
